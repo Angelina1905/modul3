@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, [col] 1fr);
+  grid-template-rows: repeat(3, [row] 1fr);
+  grid-gap: 1em;
+  background-color: black;
+}
+.grid-item {
+  min-height: 200px;
+}
+      .grid-item1 {
+        background-color: white;
+        grid-column: span 2;
+        grid-row: span 2;
+
+
+      }
+      .grid-item2 {
+        background-color: white;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .grid-item3 {
+        background-color: white;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .grid-item9 {
+        background-color: orange;
+        grid-column: col 2 / col 4;
+      }
+      .grid-item10 {
+        background-color: orange;
+        grid-column: col 4 / col 6;
+      }
+      .pers1 {
+        position: absolute;
+width: 100%;
+height: 50%;
+left: -34%;
+top: 65%;
+      }
+      .pers2 {
+        position: absolute;
+width: 65%;
+height: 65%;
+left: -18%;
+top: 20%;
+      }
+      .pers3 {
+        position: absolute;
+width: 10%;
+height: 30%;
+left: 21%;
+top: 80%;
+      }
+      .word1 {
+        position: absolute;
+width: 20%;
+height: 45%;
+left: 15%;
+top: 10%;
+      }
+      .word2 {
+        position: absolute;
+        width: 15%;
+        height: 15%;
+left: 2%;
+top: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item grid-item1">
+        <img src="img/box1.svg" class="pers1"><img src="img/box2.svg" class="pers2"><img src="img/box3.svg" class="pers3"><img src="img/ОТЕЛЬ.svg" class="word1"><img src="img/ОТЕЛЬ2.svg" class="word2">
+      </div>
+      <div class="grid-item grid-item2">
+        <img src="img/box4.svg" class="pers4">
+      </div>
+      <div class="grid-item grid-item3">
+        <img src="img/box5.svg" alt="pers5">
+      </div>
+      <div class="grid-item grid-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="grid-item grid-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="grid-item grid-item3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><div class="grid-item grid-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="grid-item grid-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="grid-item grid-item3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><div class="grid-item grid-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="grid-item grid-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+
+    </div>
+  </body>
+</html>
