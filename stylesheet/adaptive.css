@@ -1,9 +1,1 @@
-@media (max-width: 680px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
-  }
-  .grid-item {
-    margin-bottom: 1em;
-  }
-}
+
