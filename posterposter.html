@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 1.5em;
+padding: 1.5em;
+grid-auto-rows: minmax(420px, auto)
+background-color: black;
+grid-template-areas:
+  "one one two two three three"
+  "one one two two three three"
+  "thre thre thre four five five"
+  "thre thre thre four five five"
+  "thre thre thre four five five";
+}
+
+.one { grid-area: one; }
+
+.two { grid-area: two; }
+
+.three { grid-area: three; }
+
+.thre { grid-area: thre; }
+
+.four { grid-area: four; }
+
+.five { grid-area: five; }
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="thre"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+    </div>
+  </body>
+</html>
