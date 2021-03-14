@@ -94,7 +94,7 @@ grid-auto-rows: minmax(420px, auto);
         position: absolute;
 width: 100%;
 height: 100%;
-left: 0%;
+left: 0.1%;
 top: 30%;
       }
       .pers2 {
@@ -159,7 +159,7 @@ top: 0%;
       position: absolute;
 width: 100%;
 height: 100%;
-left: -11.3%;
+left: -13.2%;
 top: 0%;
     }
     .included {
@@ -340,10 +340,10 @@ top: 0%;
     }
     .pe1 {
       position: absolute;
-width: 548.76px;
-height: 867.13px;
-left: -11px;
-top: 433px;
+width: 100%;
+height: 100%;
+left: -25%;
+top: -11%;
     }
 
     @media only screen and (max-width: 375px) {
@@ -427,6 +427,60 @@ left: 34%;
 top: -2%;
     } */
     </style>
+
+   <script>
+   $(document).ready(function(){
+     $(function() {
+  $('.ellipse1').click(function(){
+      $(this).css('background', 'yellow');
+
+    });
+  });
+  $(function() {
+  $('.circle2').click(function(){
+   $(this).css('background', 'purple');
+
+  });
+  });
+  $(function() {
+  $('.circle3').click(function(){
+   $(this).css('background', 'blue');
+
+  });
+  });
+  $(function() {
+  $('.circle5').click(function(){
+   $(this).css('background', 'blue');
+
+  });
+  });
+  $(function() {
+  $('.circle7').click(function(){
+   $(this).css('background', 'orange');
+
+  });
+  });
+  $(function() {
+  $('.circle4').click(function(){
+   $(this).css('background', 'orange');
+
+  });
+  });
+  $(function() {
+ $('.circle10').click(function(){
+   $(this).css('background', 'yellow');
+
+ });
+ });
+
+
+
+
+
+
+});
+   </script>
+
   </head>
   <body>
     <div class="grid">
@@ -445,6 +499,7 @@ top: -2%;
       <img src="img/banan2.svg" class="pe1">
       </div>
       <div class="grid-item grid-item5">
+        <img src="img/ice1.svg" class="pers9">
         <div class="ellipse1">
         </div>
         <div class="circle2">
@@ -465,7 +520,6 @@ top: -2%;
         </div>
         <div class="circle10">
         </div>
-        <img src="img/ice1.svg" class="pers9">
       </div>
       <div class="grid-item grid-item6">
         <img src="img/ramka1.svg" class="pers10">
