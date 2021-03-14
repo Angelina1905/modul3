@@ -346,6 +346,23 @@ left: -25%;
 top: -11%;
     }
 
+.ey1 {
+  position: absolute;
+width: 100%;
+height: 5%;
+left: -16%;
+top: 52%;
+}
+.ey2 {
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  left: 42%;
+  top: 70%;
+
+}
+
+
     @media only screen and (max-width: 375px) {
       .grid-item {
         display: grid;
@@ -473,9 +490,26 @@ top: -2%;
  });
  });
 
+ $(function() {
+ $('.circle9').click(function(){
+  $(this).css('background', 'blue');
 
+ });
+ });
+ $(function() {
+ $('.circle8').click(function(){
+  $(this).css('background', 'purple');
 
-
+ });
+ });
+ $(function(){
+			$(".ey1").hide();
+			setTimeout(function(){$(".ey1").show();setInterval(function(){$(".ey1").toggle();},800)},3000);
+		});
+    $(function(){
+         $(".ey2").hide();
+         setTimeout(function(){$(".ey2").show();setInterval(function(){$(".ey2").toggle();},1500)},500);
+       });
 
 
 });
@@ -485,7 +519,7 @@ top: -2%;
   <body>
     <div class="grid">
       <div class="grid-item grid-item1">
-        <img src="img/box1.svg" class="pers1"><img src="img/box2.svg" class="pers2"><img src="img/box3.svg" class="pers3"><img src="img/ОТЕЛЬ.svg" class="word1"><img src="img/ОТЕЛЬ2.svg" class="word2">
+        <img src="img/box1.svg" class="pers1"><img src="img/box2.svg" class="pers2"><img src="img/box3.svg" class="pers3"><img src="img/ОТЕЛЬ.svg" class="word1"><img src="img/ОТЕЛЬ2.svg" class="word2"><img src="img/eyes1.svg" class="ey1"><img src="img/eyes2.svg" class="ey2">
       </div>
       <div class="grid-item grid-item2">
       <img src="img/box4.svg" class="pers4"><img src="img/МОРОЖЕНОЕ.svg" class="pers5">
