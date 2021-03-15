@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="stylesheet/style.css">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style media="screen">
 
 .grid {
@@ -542,6 +543,27 @@ height: 12%;
 left: -14%;
 top: 22%;
 }
+.mi1 {
+  position: absolute;
+width: 100%;
+height: 15%;
+left: -32%;
+top: 35%;
+}
+.mi2 {
+  position: absolute;
+width: 100%;
+height: 15%;
+left: -12%;
+top: 43%;
+}
+.mi3 {
+  position: absolute;
+width: 100%;
+height: 12%;
+left: 14%;
+top: 53%;
+}
     @media only screen and (max-width: 375px) {
       .grid-item {
         display: grid;
@@ -769,6 +791,16 @@ top: -2%;
                                $(".ey28").hide();
                                setTimeout(function(){$(".ey28").show();setInterval(function(){$(".ey28").toggle();},1000)},500);
                              });
+   $(function() {
+   	$(".mi1").draggable();
+   });
+   $(function() {
+    $(".mi2").draggable();
+   });
+   $(function() {
+    $(".mi3").draggable();
+   });
+
 
 });
    </script>
@@ -848,6 +880,9 @@ top: -2%;
         <img src="img/eyes21.svg" class="ey21">
         <img src="img/eyes22.svg" class="ey22">
         <img src="img/eyes23.svg" class="ey23">
+        <img src="img/milk1.svg" class="mi1">
+        <img src="img/milk2.svg" class="mi2">
+        <img src="img/milk3.svg" class="mi3">
       </div>
       <div class="grid-item grid-item10">
         <img src="img/box10.svg" class="pers16">
