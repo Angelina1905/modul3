@@ -1017,7 +1017,7 @@ bottom: 0%;
 }
 
 @media only screen and (max-width: 470px) {
-  .grid {
+  /* .grid {
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -1034,88 +1034,23 @@ bottom: 0%;
       "grid-item12"
       "grid-item13";
   }
+} */
+
+.grid {
+  display: grid;
+  padding: 1.5em;
+  grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 0.2fr 2.7fr 1fr 1fr 2fr 3fr 1fr 1.5fr 2fr 1fr ;
+grid-auto-rows: minmax(450px, 440px);
+  grid-gap: 1.5em;
+  background-color: black;
 }
-
-    /* @media only screen and (max-width: 375px) {
-      .grid-item {
-        display: grid;
-        position: relative;
-      } */
-            /* .grid-item1 {
-              background-color: white;
-              grid-column: span 2;
-grid-row: span 2;
-
-            }
-            .grid-item2 {
-              background-color: white;
-              grid-row: span 2;
-grid-column: span 2;
-            }
-            .grid-item3 {
-              background-color: white;
-              grid-row: span 2;
-grid-column: span 2;
-            }
-            .grid-item4 {
-              background-color: white;
-              grid-column: span 3;
-    grid-row: span 3;
-
-
-            }
-            .grid-item5 {
-              background-color: white;
-              grid-row: span 2;
-
-            }
-            .grid-item6 {
-              background-color: white;
-              grid-column: span 2;
-
-            }
-            .grid-item7 {
-              background-color: white;
-              /* grid-column: span 2;
-              grid-row: span 2; */
-            /* }
-            .grid-item8 {
-              background-color: white;
-              grid-row: span 2;
-            }
-            .grid-item9 {
-              background-color: white;
-              grid-column: span 2;
-              grid-row: span 2;
-            }
-            .grid-item10 {
-              background-color: white;
-              grid-column: span 2;
-            }
-            .grid-item11 {
-              background-color: white;
-              /* grid-column: span 2;
-              grid-row: span 2; */
-            }
-            /* .grid-item12 {
-              background-color: white;
-              height: 50%;
-
-            }
-            .grid-item13 {
-              background-color: white;
-              grid-column: span 2;
-              height: 50%;
-            } */
-
-
-    /* .pers8 {
-      position: absolute;
-width: 100%;
-height: 107%;
-left: 34%;
-top: -2%;
-    } */
+.grid-item {
+  display: grid;
+  position: relative;
+  min-height: 200px;
+}
+}
     </style>
 
    <script>
