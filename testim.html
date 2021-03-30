@@ -1013,11 +1013,12 @@ width: 13%;
 right: 0%;
 bottom: 0%;
 }
-.ozenka {
-  position: absolute;
+#ozenka {
+position: absolute;
 width: 50%;
 right: 10%;
 top: 3%;
+display: none;
 }
 #myOverlay {
   z-index: 37;
@@ -1027,6 +1028,14 @@ top: 3%;
   top: 0; left: 0;
   cursor: pointer;
   display: none;
+}
+#cross1 {
+  position: absolute;
+width: 3%;
+right: 13%;
+top: 5.5%;
+cursor: pointer;
+display: block;
 }
 
 @media only screen and (max-width: 470px) {
@@ -1246,17 +1255,17 @@ grid-auto-rows: minmax(450px, 440px);
     $(".mi5").draggable();
    });
 
-   $('a.myLinkModal').click( function(event){
+   $('a.B1').click( function(event){
       event.preventDefault();
       $('#myOverlay').fadeIn(297,	function(){
-        $('#myModal')
+        $('#ozenka')
         .css('display', 'block')
         .animate({opacity: 1}, 198);
       });
     });
 
-    $('#myModal__close, #myOverlay').click( function(){
-      $('#myModal').animate({opacity: 0}, 198, function(){
+    $('#cross1, #myOverlay').click( function(){
+      $('#ozenka').animate({opacity: 0}, 198, function(){
         $(this).css('display', 'none');
         $('#myOverlay').fadeOut(297);
       });
@@ -1316,8 +1325,11 @@ grid-auto-rows: minmax(450px, 440px);
       <div class="whitetest4"></div>
       <div class="whitetest5"></div>
       <img src="img/banan2.svg" class="pe1">
-      <img src="img/ozenka.svg" class="ozenka">
-      <div id="myOverlay"></div>
+      <div id="ozenka">
+        <img src="img/ozenka.svg" class="ozenka">
+        <img src="img/cross1.svg" id="cross1">
+      </div>
+<div id="myOverlay"></div>
       </div>
       <div class="grid-item grid-item5">
         <img src="img/ice1.svg" class="pers9">
