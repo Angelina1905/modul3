@@ -536,9 +536,8 @@ top: 5.5%;
 }
 .B5 {
   position: absolute;
-width: 100%;
-height: 10%;
-left: -34%;
+width: 55%;
+left: 1%;
 top: 53.2%;
 }
 .B6 {
@@ -1081,6 +1080,22 @@ top: 5.5%;
 cursor: pointer;
 display: block;
 }
+#ydobno {
+  position: absolute;
+  width: 55%;
+  left: 1%;
+bottom: -8.8%;
+  display: none;
+  z-index: 1;
+}
+#cross5 {
+  position: absolute;
+width: 6%;
+right: -3%;
+top: 5%;
+cursor: pointer;
+display: block;
+}
 
 @media only screen and (max-width: 470px) {
   .grid {
@@ -1363,6 +1378,21 @@ grid-auto-rows: minmax(450px, 440px);
         });
       });
 
+      $('a.B5').click( function(event){
+         event.preventDefault();
+         $('#myOverlay').fadeIn(297,	function(){
+           $('#ydobno')
+           .css('display', 'block')
+           .animate({opacity: 1}, 198);
+         });
+       });
+
+       $('#cross5, #myOverlay').click( function(){
+         $('#razmesh').animate({opacity: 0}, 198, function(){
+           $(this).css('display', 'none');
+           $('#myOverlay').fadeOut(297);
+         });
+       });
 
 });
    </script>
@@ -1510,7 +1540,6 @@ grid-auto-rows: minmax(450px, 440px);
           <img src="img/box20.svg" class="box20">
           <img src="img/box21.svg" class="box21">
         </div>
-        <img src="img/BUT5.svg" class="B5">
         <div class="blacktest12"></div>
         <div class="whitetest11"></div>
         <div class="whitetest12"></div>
@@ -1528,6 +1557,11 @@ grid-auto-rows: minmax(450px, 440px);
         <img src="img/milk3.svg" class="mi3">
         <img src="img/milk4.svg" class="mi4">
         <img src="img/milk5.svg" class="mi5">
+        <a class="B5" href="#"><img src="img/BUT5.svg" class="B5"></a>
+        <div id="ydobno">
+          <img src="img/ydobno.svg" class="ydobno">
+          <img src="img/cross1.svg" id="cross5">
+        </div>
       </div>
       <div class="grid-item grid-item10">
         <div class="korobka"></div>
