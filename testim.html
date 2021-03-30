@@ -8,7 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style media="screen">
-
+body {
+  background-color: black;
+}
 .grid {
   display: grid;
   padding: 1.5em;
@@ -17,7 +19,7 @@ grid-auto-rows: minmax(450px, 440px);
   /* grid-template-columns: repeat(6, [col] 1fr);
   grid-template-rows: repeat(3, [row] 1fr); */
   grid-gap: 1.5em;
-  background-color: black;
+
 }
 .grid-item {
   display: grid;
@@ -542,9 +544,16 @@ top: 53.2%;
 }
 .B6 {
   position: absolute;
-width: 80%;
+width: 77%;
 left: 1%;
 top: 2%;
+}
+.B7 {
+  position: absolute;
+width: 62%;
+left: 1%;
+bottom: 15%;
+z-index: 1;
 }
 .blacktest {
   position: absolute;
@@ -1097,7 +1106,6 @@ display: block;
 }
 .color {
   background-color: black;
-
 }
 
 
@@ -1392,17 +1400,23 @@ grid-auto-rows: minmax(450px, 440px);
        });
 
        $('#cross5, #myOverlay').click( function(){
-         $('#razmesh').animate({opacity: 0}, 198, function(){
+         $('#ydobno').animate({opacity: 0}, 198, function(){
            $(this).css('display', 'none');
            $('#myOverlay').fadeOut(297);
          });
        });
 
-
+$(".B6").click(function(){
+let user_otvet = prompt("Спасибо, что выбрали наш отель! Введите вашу электронную почту или номер телефона, чтобы наш персонал связался с вами.");
+    if(user_otvet === null){
+      alert("Ждём вас в следующий раз!"); // инструкция 1
+      } else {
+        alert("Мы свяжемся с вами в ближайшее время!"); // инструкция 2
+        }
 
 
 });
-
+});
    </script>
 
   </head>
@@ -1410,6 +1424,7 @@ grid-auto-rows: minmax(450px, 440px);
     <div class="grid">
       <div class="grid-item grid-item1">
         <img src="img/box1.svg" class="pers1"><img src="img/box2.svg" class="pers2"><img src="img/box3.svg" class="pers3"><img src="img/ОТЕЛЬ.svg" class="word1"><img src="img/ОТЕЛЬ2.svg" class="word2"><img src="img/eyes1.svg" class="ey1"><img src="img/eyes2.svg" class="ey2">
+        
       </div>
       <div class="grid-item grid-item2">
         <div class="kvdrat4"></div>
