@@ -524,10 +524,9 @@ top: 30%;
 }
 .B3 {
   position: absolute;
-width: 100%;
-height: 10%;
-left: -10%;
-top: 26.5%;
+width: 80%;
+left: 17%;
+top: 28%;
 }
 .B4 {
   position: absolute;
@@ -1040,9 +1039,32 @@ display: block;
 #plus {
   position: absolute;
 width: 55%;
-left: 0%;
-top: 0%;
+left: 23%;
+bottom: 25%;
 display: none;
+}
+#cross2 {
+  position: absolute;
+width: 7%;
+right: -4%;
+top: 5.5%;
+cursor: pointer;
+display: block;
+}
+#sezon {
+  position: absolute;
+  width: 55%;
+  left: -37%;
+  bottom: 23%;
+  display: none;
+}
+#cross3 {
+  position: absolute;
+width: 12%;
+right: -129%;
+top: 5.5%;
+cursor: pointer;
+display: block;
 }
 
 @media only screen and (max-width: 470px) {
@@ -1278,17 +1300,17 @@ grid-auto-rows: minmax(450px, 440px);
       });
     });
 
-    $('a.B2').click( function(event){
+    $('a.B3').click( function(event){
        event.preventDefault();
        $('#myOverlay').fadeIn(297,	function(){
-         $('#plus')
+         $('#sezon')
          .css('display', 'block')
          .animate({opacity: 1}, 198);
        });
      });
 
-     $('#cross1, #myOverlay').click( function(){
-       $('#plus').animate({opacity: 0}, 198, function(){
+     $('#cross3, #myOverlay').click( function(){
+       $('#sezon').animate({opacity: 0}, 198, function(){
          $(this).css('display', 'none');
          $('#myOverlay').fadeOut(297);
        });
@@ -1354,7 +1376,7 @@ grid-auto-rows: minmax(450px, 440px);
       </div>
       <div id="plus">
         <img src="img/plus.svg" class="plus">
-        <img src="img/cross1.svg" id="cross1">
+        <img src="img/cross1.svg" id="cross2">
       </div>
 
       </div>
@@ -1383,7 +1405,11 @@ grid-auto-rows: minmax(450px, 440px);
         </div>
         <img src="img/eyes12.svg" class="ey12">
         <img src="img/eyes13.svg" class="ey13">
-        <img src="img/BUT3.svg" class="B3">
+        <a class="B3" href="#"><img src="img/BUT3.svg" class="B3"></a>
+        <div id="sezon">
+          <img src="img/sezon.svg" class="sezon">
+          <img src="img/cross1.svg" id="cross3">
+        </div>
       </div>
       <div class="grid-item grid-item6">
         <img src="img/persik5.svg" class="persik5">
