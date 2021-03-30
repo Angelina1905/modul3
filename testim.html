@@ -530,10 +530,9 @@ top: 28%;
 }
 .B4 {
   position: absolute;
-width: 100%;
-height: 10%;
-left: 10%;
-top: 6.5%;
+width: 110%;
+left: 1.4%;
+top: 5.5%;
 }
 .B5 {
   position: absolute;
@@ -1058,10 +1057,26 @@ display: block;
   bottom: 23%;
   display: none;
 }
+#razmesh {
+  position: absolute;
+  width: 55%;
+  left: 20%;
+top: 5%;
+  display: none;
+  z-index: 1;
+}
 #cross3 {
   position: absolute;
 width: 12%;
 right: -129%;
+top: 5.5%;
+cursor: pointer;
+display: block;
+}
+#cross4 {
+  position: absolute;
+width: 12%;
+right: -141%;
 top: 5.5%;
 cursor: pointer;
 display: block;
@@ -1300,6 +1315,22 @@ grid-auto-rows: minmax(450px, 440px);
       });
     });
 
+    $('a.B2').click( function(event){
+       event.preventDefault();
+       $('#myOverlay').fadeIn(297,	function(){
+         $('#plus')
+         .css('display', 'block')
+         .animate({opacity: 1}, 198);
+       });
+     });
+
+     $('#cross2, #myOverlay').click( function(){
+       $('#plus').animate({opacity: 0}, 198, function(){
+         $(this).css('display', 'none');
+         $('#myOverlay').fadeOut(297);
+       });
+     });
+
     $('a.B3').click( function(event){
        event.preventDefault();
        $('#myOverlay').fadeIn(297,	function(){
@@ -1316,6 +1347,21 @@ grid-auto-rows: minmax(450px, 440px);
        });
      });
 
+     $('a.B4').click( function(event){
+        event.preventDefault();
+        $('#myOverlay').fadeIn(297,	function(){
+          $('#razmesh')
+          .css('display', 'block')
+          .animate({opacity: 1}, 198);
+        });
+      });
+
+      $('#cross4, #myOverlay').click( function(){
+        $('#razmesh').animate({opacity: 0}, 198, function(){
+          $(this).css('display', 'none');
+          $('#myOverlay').fadeOut(297);
+        });
+      });
 
 
 });
@@ -1440,13 +1486,17 @@ grid-auto-rows: minmax(450px, 440px);
       <div class="grid-item grid-item8">
         <div class="kvdrat"></div>
         <img src="img/eyes17.svg" class="ey17">
-        <img src="img/BUT4.svg" class="B4">
         <img src="img/5ЗВЁЗД.svg" class="zv1">
         <img src="img/5ЗВЁЗД2.svg" class="zv2">
         <img src="img/palm.svg" class="palm1">
         <div class="blacktest8"></div>
         <div class="blacktest9"></div>
         <div class="whitetest10"></div>
+        <a class="B4" href="#"><img src="img/BUT4.svg" class="B4"></a>
+        <div id="razmesh">
+          <img src="img/razmesh.svg" class="razmesh">
+          <img src="img/cross1.svg" id="cross4">
+        </div>
       </div>
       <div class="grid-item grid-item9">
         <img src="img/box14.svg" class="box145">
