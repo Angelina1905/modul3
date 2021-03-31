@@ -1019,7 +1019,7 @@ right: 0%;
 bottom: 0%;
 }
 #ozenka {
-position: absolute;
+position: fixed;
 width: 50%;
 right: 10%;
 top: 3%;
@@ -1044,7 +1044,7 @@ cursor: pointer;
 display: block;
 }
 #plus {
-  position: absolute;
+  position: fixed;
 width: 55%;
 left: 23%;
 bottom: 25%;
@@ -1060,7 +1060,7 @@ cursor: pointer;
 display: block;
 }
 #sezon {
-  position: absolute;
+  position: fixed;
   width: 55%;
   left: -37%;
   bottom: 23%;
@@ -1068,7 +1068,7 @@ display: block;
   z-index: 37;
 }
 #razmesh {
-  position: absolute;
+  position: fixed;
   width: 55%;
   left: 20%;
 top: 5%;
@@ -1092,7 +1092,7 @@ cursor: pointer;
 display: block;
 }
 #ydobno {
-  position: absolute;
+  position: fixed;
   width: 55%;
   left: 1%;
 bottom: -8.8%;
@@ -1472,14 +1472,8 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
       <img src="img/banan2.svg" class="pe1">
       <a class="B1" href="#"><img src="img/BUT1.svg" class="B1"></a>
       <a class="B2" href="#"><img src="img/BUT2.svg" class="B2"></a>
-      <div id="ozenka">
-        <img src="img/ozenka.svg" class="ozenka">
-        <img src="img/cross1.svg" id="cross1">
-      </div>
-      <div id="plus">
-        <img src="img/plus.svg" class="plus">
-        <img src="img/cross1.svg" id="cross2">
-      </div>
+
+
 
       </div>
       <div class="grid-item grid-item5">
@@ -1508,10 +1502,7 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
         <img src="img/eyes12.svg" class="ey12">
         <img src="img/eyes13.svg" class="ey13">
         <a class="B3" href="#"><img src="img/BUT3.svg" class="B3"></a>
-        <div id="sezon">
-          <img src="img/sezon.svg" class="sezon">
-          <img src="img/cross1.svg" id="cross3">
-        </div>
+
       </div>
       <div class="grid-item grid-item6">
         <img src="img/persik5.svg" class="persik5">
@@ -1549,10 +1540,7 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
         <div class="blacktest9"></div>
         <div class="whitetest10"></div>
         <a class="B4" href="#"><img src="img/BUT4.svg" class="B4"></a>
-        <div id="razmesh">
-          <img src="img/razmesh.svg" class="razmesh">
-          <img src="img/cross1.svg" id="cross4">
-        </div>
+
       </div>
       <div class="grid-item grid-item9">
         <img src="img/box14.svg" class="box145">
@@ -1584,10 +1572,7 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
         <img src="img/milk4.svg" class="mi4">
         <img src="img/milk5.svg" class="mi5">
         <a class="B5" href="#"><img src="img/BUT5.svg" class="B5"></a>
-        <div id="ydobno">
-          <img src="img/ydobno.svg" class="ydobno">
-          <img src="img/cross1.svg" id="cross5">
-        </div>
+
       </div>
       <div class="grid-item grid-item10">
         <div class="korobka"></div>
@@ -1626,7 +1611,26 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
         <div class="whitetest15">
         </div>
        </div>
-
+       <div id="ozenka">
+         <img src="img/ozenka.svg" class="ozenka">
+         <img src="img/cross1.svg" id="cross1">
+       </div>
+       <div id="plus">
+         <img src="img/plus.svg" class="plus">
+         <img src="img/cross1.svg" id="cross2">
+       </div>
+       <div id="sezon">
+           <img src="img/sezon.svg" class="sezon">
+           <img src="img/cross1.svg" id="cross3">
+         </div>
+       <div id="razmesh">
+           <img src="img/razmesh.svg" class="razmesh">
+           <img src="img/cross1.svg" id="cross4">
+         </div>
+       <div id="ydobno">
+           <img src="img/ydobno.svg" class="ydobno">
+           <img src="img/cross1.svg" id="cross5">
+         </div>
 
 
     </div>
