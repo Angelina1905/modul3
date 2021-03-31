@@ -1143,9 +1143,68 @@ display: block;
 
 
 @media only screen and (max-width: 470px) {
-  .grid {
+  .grid-item1 {
+    grid-column: 1/4;
+    background-color: white;
+  }
+  .grid-item2 {
+    grid-column: 1/4;
+    background-color: white;
+  }
+  .grid-item3 {
+    grid-column: 1/4;
+    background-color: white;
+  }
+  .grid-item4 {
+    background-color: white;
+grid-column: 1/4;
+grid-row: 4/4;
+
+  }
+  .grid-item5 {
+    background-color: white;
+      grid-column: 1/4;
+
+  }
+  .grid-item6 {
+    background-color: white;
+    grid-column: span 2;
+
+  }
+  .grid-item7 {
+    background-color: white;
+  }
+  .grid-item8 {
+    background-color: white;
+    grid-row: span 2;
+  }
+  .grid-item9 {
+    background-color: white;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .grid-item10 {
+    background-color: white;
+    grid-column: span 2;
+  }
+  .grid-item11 {
+    background-color: white;
+  }
+  .grid-item12 {
+    background-color: white;
+    height: 50%;
+
+  }
+  .grid-item13 {
+    background-color: white;
+    grid-column: span 2;
+    height: 50%;
+  }
+}
+  /* .grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0fr 2fr 1fr 1fr 1fr 2fr 0fr 1.2fr 1fr 1.3fr 1fr 0.5fr 0.1fr 0.1fr;
+    /* grid-template-rows: 1fr 1fr 0fr 2fr 1fr 1fr 1fr 2fr 0fr 1.2fr 1fr 1.3fr 1fr 0.5fr 0.1fr 0.1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "grid-item1"
       "grid-item2"
@@ -1154,16 +1213,17 @@ display: block;
       "grid-item5"
       "grid-item6"
       "grid-item7"
+      "grid-item8"
       "grid-item9"
       "grid-item10"
       "grid-item11"
       "grid-item12"
       "grid-item13";
-  }
+  } */ */
 }
 /* @media only screen and (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 4fr 3fr 2fr 1fr 4fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "grid-item1"
@@ -1173,6 +1233,7 @@ display: block;
       "grid-item5"
       "grid-item6"
       "grid-item7"
+      "grid-item8"
       "grid-item9"
       "grid-item10"
       "grid-item11"
