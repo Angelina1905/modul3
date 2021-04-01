@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style media="screen">
 body {
-  background-color: black;
+  background-color: #000000;
 }
 .grid {
   display: grid;
@@ -22,62 +22,63 @@ grid-auto-rows: minmax(450px, 440px);
 
 }
 .grid-item {
+  background-color: white;
   display: grid;
   position: relative;
   min-height: 200px;
 }
       .grid-item1 {
-        background-color: white;
+        /* background-color: white; */
       }
       .grid-item2 {
-        background-color: white;
+        /* background-color: white; */
       }
       .grid-item3 {
-        background-color: white;
+        /* background-color: white; */
       }
       .grid-item4 {
-        background-color: white;
+        /* background-color: white; */
         grid-column: span 2;
         grid-row: span 2;
 
 
       }
       .grid-item5 {
-        background-color: white;
+        /* background-color: white; */
         grid-row: span 2;
 
       }
       .grid-item6 {
-        background-color: white;
+        /* background-color: white; */
         grid-column: span 2;
 
       }
       .grid-item7 {
-        background-color: white;
+        /* background-color: white; */
       }
       .grid-item8 {
-        background-color: white;
+        /* background-color: white; */
         grid-row: span 2;
       }
       .grid-item9 {
-        background-color: white;
+        /* background-color: white; */
         grid-column: span 2;
         grid-row: span 2;
       }
       .grid-item10 {
-        background-color: white;
+        /* background-color: white; */
         grid-column: span 2;
       }
       .grid-item11 {
-        background-color: white;
+        /* background-color: white; */
       }
       .grid-item12 {
-        background-color: white;
+        /* background-color: white; */
         height: 50%;
 
       }
       .grid-item13 {
-        background-color: white;
+        /* background-color: white; */
         grid-column: span 2;
         height: 50%;
       }
@@ -1137,11 +1138,12 @@ top: 55%;
 cursor: pointer;
 display: block;
 }
-.color {
-  background-color: black;
+.white {
+  background-color: #ffffff;
 }
-
-
+.black {
+  background-color: #000000;
+}
 @media only screen and (max-width: 470px) {
   .grid-item1 {
     grid-column: 1/4;
@@ -1498,9 +1500,19 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
       } else {
         alert("Мы свяжемся с вами в ближайшее время!"); // инструкция 2
         }
-
-
 });
+
+$('a.B7').click(function(){
+       $('body').css('background', 'white');
+       $(this).removeClass();
+       $(this).addClass('white');
+          });
+          $('a.B7').click(function(){
+       $('grid-item').css('background','black')
+       $(this).removeClass();
+       $(this).addClass('black');
+     });
+
 });
    </script>
 
@@ -1509,7 +1521,7 @@ let user_otvet = prompt("Спасибо, что выбрали наш отель
     <div class="grid">
       <div class="grid-item grid-item1">
         <img src="img/box1.svg" class="pers1"><img src="img/box2.svg" class="pers2"><img src="img/box3.svg" class="pers3"><img src="img/ОТЕЛЬ.svg" class="word1"><img src="img/ОТЕЛЬ2.svg" class="word2"><img src="img/eyes1.svg" class="ey1"><img src="img/eyes2.svg" class="ey2">
-
+  <a class="B7" href="#"><img src="img/night.svg" class="B7"></a>
       </div>
       <div class="grid-item grid-item2">
         <div class="kvdrat4"></div>
